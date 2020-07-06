@@ -1,0 +1,122 @@
+Marking #25: StudentInfo(repo='uw-ece650-f19-a3-chitraa-ramachandran', first='CHITRAA', last='RAMACHANDRAN', watiam='cramacha', studentid=20820331, email='cramacha@uwaterloo.ca')
+Mark = 0
+
+Running test 0 (idle run, try not to crash):	
+ +20 (/20)
+Running test 1 (idle run, check if output is valid, expect to get 3 graphs):
+
+No output received on try 0
+Output is:
+--------------
+
+--------------
+
+Status:	Graph validation succeeded
+Parse result:
+
+Expected 3 graphs, found: 0
+Test 1 mark: +0 (/15)
+Running test 2 (Error check arguments):
+	running: ./ece650-a3 -l 1
+
+Output is:
+--------------
+Error: the l value should atleast be 5
+
+--------------
+Test 2 mark: +5 (/5)
+Running test 3 (idle run, check if output is valid):
+
+Output is:
+--------------
+
+No output
+
+--------------
+
+Test 3 mark:, +0 (/20)
+Running test 4 (check if rgen produces valid output, expect to get 3 graphs):
+	run: ./rgen -l 6 -s 3 -n 3 -c 10
+
+Output is:
+--------------
+a "street" (-3,-9)(-9,-10)(-1,5)(1,-4)
+a "streeti" (-2,9)(-3,-9)
+a "streetii" (-9,-6)(9,5)
+g
+r "street"
+r "streeti"
+r "streetii"
+a "street" (0,-7)(4,0)(-10,-9)(1,7)
+a "streeti" (4,4)(4,9)(8,-8)(-10,-3)
+a "streetii" (-10,-7)(7,0)
+g
+r "street"
+r "streeti"
+r "streetii"
+a "street" (-3,-9)(-10,2)(9,-8)
+a "streeti" (-5,4)(-4,3)(-10,4)
+g
+
+--------------
+Output without errors:
+
+--------------
+a "street" (-3,-9)(-9,-10)(-1,5)(1,-4)
+a "streeti" (-2,9)(-3,-9)
+a "streetii" (-9,-6)(9,5)
+g
+r "street"
+r "streeti"
+r "streetii"
+a "street" (0,-7)(4,0)(-10,-9)(1,7)
+a "streeti" (4,4)(4,9)(8,-8)(-10,-3)
+a "streetii" (-10,-7)(7,0)
+g
+r "street"
+r "streeti"
+r "streetii"
+a "street" (-3,-9)(-10,2)(9,-8)
+a "streeti" (-5,4)(-4,3)(-10,4)
+g
+
+--------------
+Validation result:
+s 3 n 3 x 9 y 10
+s 3 n 3 x 10 y 9
+s 2 n 2 x 10 y 9
+
+Test 4 mark: +20 (/20)
+Running test 5 (replace rgen, check shortest path):
+Replaced rgen returned:
+
+            a "Weber Street" (2,-1) (2,2) (5,5) (5,6) (3,8)
+            a "King Street S" (4,2) (4,8)
+            a "Davenport Road" (1,4) (5,8)
+            g
+        
+Output is:
+--------------
+V 10
+E {<7,0>,<7,3>,<7,6>,<2,4>,<2,9>,<7,5>,<2,1>,<2,7>,<7,8>}
+
+~~~~~
+Status:	Graph validation succeeded
+Sending queries:
+s 0 7
+s 3 7
+~~~~~
+
+0-7
+3-7
+
+
+--------------
+
+Test 5 mark: +20 (/20)
+
+
+--------------
+Finished marking
+Total mark: 65 / 100
+Final mark: 65
