@@ -1,0 +1,18 @@
+---
+# Personal information
+# Enter information for both team members
+# Leave the second entry as is if there is only one person
+# on your team
+-
+  first: CHITRAA
+  last: RAMACHANDRAN
+  watiam: CRAMACHA
+  student: 20820331
+  email: chitraaramachandran@gmail.com
+-
+  first: BHAVANI
+  last: BANDHU
+  watiam: bbandhu
+  student: 20843127
+  email: bbandhu@uwaterloo.ca
+...
